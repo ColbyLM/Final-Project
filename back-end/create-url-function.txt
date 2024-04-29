@@ -1,0 +1,5 @@
+export function createUrlFromQueryObject(queryObjectWithApiKey) {
+    const queryString = new URLSearchParams(queryObjectWithApiKey).toString();
+    const url = baseUrl + "?" + queryString;
+    return url;
+}

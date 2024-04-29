@@ -1,0 +1,3 @@
+function addApiKey(queryObject){
+    return {...queryObject, apiKey: apiKey}
+}

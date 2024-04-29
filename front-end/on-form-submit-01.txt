@@ -1,0 +1,12 @@
+function onFormSubmit(queryObject) {
+  let newSavedQueries = [];
+  newSavedQueries.push(queryObject);
+  for (let query of savedQueries) {
+    if (query.queryName !== queryObject.queryName) {
+      newSavedQueries.push(query);
+    }
+  }
+  console.log(JSON.stringify(newSavedQueries));
+  setSavedQueries(newSavedQueries);    
+  setQuery(queryObject);
+}

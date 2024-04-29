@@ -1,0 +1,5 @@
+const apiKey = process.env.API_KEY;
+if(!apiKey){
+  console.log("Please set the API_KEY environment variable with a valid newsapi.org apiKey and restart the server!");
+  process.exit(0);
+}
