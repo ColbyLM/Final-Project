@@ -1,0 +1,56 @@
+When going through and running a body content search I was able to get this result 
+from the following item(s)
+
+Post command as a RAW JSON search parameter. 
+{
+"country":"us",
+"pageSize": 3,
+"q": ""
+}
+
+*Result*
+{
+    "status": "ok",
+    "totalResults": 36,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Democrats are worried. But will RFK Jr take more votes away from Trump? - BBC.com",
+            "description": "In a tight election, the independent candidate could get enough votes to influence who wins the White House.",
+            "url": "https://www.bbc.com/news/world-us-canada-68893186",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1802A/production/_131364389_kennedy1.jpg",
+            "publishedAt": "2024-04-28T17:46:56Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters",
+            "title": "Elon Musk visits China as Tesla seeks self-driving technology rollout - Reuters",
+            "description": null,
+            "url": "https://www.reuters.com/business/autos-transportation/elon-musk-heading-china-visit-teslas-second-biggest-market-sources-say-2024-04-28/",
+            "urlToImage": null,
+            "publishedAt": "2024-04-28T17:10:45Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Nouran Salahieh, Robert Shackelford",
+            "title": "At least 3 killed in Oklahoma tornado outbreak, as threat of severe storms continues from Missouri to Texas - CNN",
+            "description": "At least three people are dead, including an infant, after a tornado outbreak in Oklahoma overnight, as severe storms threaten more twisters, heavy rain and large hail from Missouri to Texas Sunday.",
+            "url": "https://www.cnn.com/2024/04/28/weather/plains-midwest-storms-tornadoes-climate-sunday/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2024-04-28t013656z-890121610-rc2df7aqoas0-rtrmadp-3-usa-weather.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2024-04-28T16:50:00Z",
+            "content": "At least three people are dead, including an infant, after a tornado outbreak in Oklahoma overnight, as severe storms threaten more twisters, heavy rain and large hail from Missouri to Texas Sunday.\r… [+5919 chars]"
+        }
+    ]
+}

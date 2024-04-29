@@ -46,7 +46,11 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    res.send("POST called");  
+    let query = req.body;
+    let queryObjectWithApiKey = addApiKey(query);
+    let url = createUrlFromQueryObject(queryObjectWithApiKey);
+    let newsArticles = await fetchData(url);
+    res.send(newsArticles);
 });
 
 export default router;
