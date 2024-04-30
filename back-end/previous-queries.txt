@@ -1,0 +1,17 @@
+// this file was renamed from queries.json to previous-queries.txt. This is due to adding 
+// the query utility within the front-end. Will hold onto it in case if used later.
+
+[
+  {
+    "queryName": "query01",
+    "language": "en",
+    "pageSize": 10,
+    "q": "news"
+  },
+  {
+    "queryName": "query02",
+    "language": "en",
+    "pageSize": 10,
+    "q": "build"
+  }
+]
