@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
     }    
 });
 
-router.post('/', async (req, res) => {
+router.post('/authenticate', async (req, res) => {
     try {
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
