@@ -7,67 +7,106 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header p{
+header p {
   font-size: large;
 }
 
-ol{
-  padding-left:20px;
+ol {
+  padding-left: 20px;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.left{
-  float:left;
-  border:1px solid black;
+.left {
+  float: left;
+  border: 1px solid black;
 }
 
-.right{
-  float:right;
-  border:1px solid black;
+.right {
+  float: right;
+  border: 1px solid black;
 }
 
-.parent{
-  display:flex;
+.parent {
+  display: flex;
   flex-direction: row;
 }
 
-.box{
-  border:1px solid black;
-  flex:1;
+.box {
+  border: 1px solid black;
+  flex: 1;
   padding: 5px;
   max-width: 300px;
   font-size: small;
+  grid-column: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
-.box span{
+.login {
+  border: 1px solid black;
+  flex: 1;
+  padding: 5px;
+  max-width: 275px;
+  font-size: small;
+  margin-right: 20px; /* Added margin */
+}
+
+.box3 {
+  border: 1px solid black;
+  flex: 1;
+  padding: 5px;
+  max-width: 300px;
+  font-size: small;
+  overflow-y: auto;
+}
+
+.box span {
   padding: 3px;
   text-align: center;
 }
 
-.title{
+.box3 span {
+  padding: 3px;
+  text-align: center;
+}
+
+.title {
   font-weight: bold;
   display: block;
   background-color: #888;
   color: white;
 }
 
-.selected{
+.selected {
   font-weight: bold;
 }
 
-.hidden{
-  display:none;
-}
-.visible{
-  display:block;
+.hidden {
+  display: none;
 }
 
-.moreHidden{
-  display:none;
+.visible {
+  display: block;
 }
-.moreVisible{
-  display:block;
+
+.moreHidden {
+  display: none;
+}
+
+.moreVisible {
+  display: block;
+}
+
+.my_scroll_div {
+  overflow-y: auto;
+  max-height: 100px;
+}
+
+.ib{
+  display: inline-block;
+  border: 1pc solid black
 }

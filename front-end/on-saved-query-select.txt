@@ -1,4 +1,0 @@
-function onSavedQuerySelect(selectedQuery) {
-  setQueryFormObject(selectedQuery);
-  setQuery(selectedQuery);
-}

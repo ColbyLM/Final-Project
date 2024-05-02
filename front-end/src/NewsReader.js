@@ -140,33 +140,40 @@ export function NewsReader() {
   return (
     <div>
       <div>
-        <LoginForm login={login}
-          credentials={credentials}
-          currentUser={currentUser}
-          setCredentials={setCredentials} />
-        <div >
-          <section className="parent" >
-        <div className="box">
-          <span className='title'>Query Form</span>
-          <QueryForm
+        <div style={{ margin: '0 275px 0 0' }}>
+          <span className='title'>Login</span>
+          <LoginForm
+            login={login}
+            credentials={credentials}
             currentUser={currentUser}
-            setFormObject={setQueryFormObject}
-            formObject={queryFormObject}
-            submitToParent={onFormSubmit} />
+            setCredentials={setCredentials}
+          />
         </div>
-        <div className="box">
-          <span className='title'>Saved Queries</span>
-          <SavedQueries savedQueries={savedQueries}
-            selectedQueryName={query.queryName}
-            onQuerySelect={onSavedQuerySelect} />
-        </div>
-        <div className="box">
-          <span className='title'>Articles List</span>
-          <Articles query={query} data={data} />
-        </div>
+        <section className="parent">
+          <div className="box">
+            <span className='title'>Query Form</span>
+            <QueryForm
+              currentUser={currentUser}
+              setFormObject={setQueryFormObject}
+              formObject={queryFormObject}
+              submitToParent={onFormSubmit}
+            />
+          </div>
+          <div className="box">
+            <span className='title'>Saved Queries</span>
+            <SavedQueries
+              savedQueries={savedQueries}
+              selectedQueryName={query.queryName}
+              onQuerySelect={onSavedQuerySelect}
+            />
+          </div>
+          <div className="box3">
+            <span className='title'>Articles List</span>
+            <Articles query={query} data={data} 
+            />
+          </div>
         </section>
       </div>
     </div>
-  </div>
-  )
+  );
 }
